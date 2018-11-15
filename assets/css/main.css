@@ -2412,6 +2412,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			margin-bottom: .5rem;
 		}
 
 			ul.icons li {
@@ -4282,7 +4283,7 @@
 /* Footer */
 
 	#footer {
-		padding: 4rem 0 2rem 0 ;
+		padding: 1rem 0 .25rem 0 ;
 		background: #000;
 		text-align: center;
 	}
@@ -4298,7 +4299,7 @@
 		#footer .copyright {
 			color: #bbb;
 			font-size: 0.9rem;
-			margin: 0 0 2rem 0;
+			margin: 0 0 .5rem 0;
 			padding: 0;
 			text-align: center;
 		}
@@ -4306,7 +4307,7 @@
 		@media screen and (max-width: 736px) {
 
 			#footer {
-				padding: 3rem 0 1rem 0 ;
+				padding: 2rem 0 1rem 0 ;
 			}
 
 		}
