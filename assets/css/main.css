@@ -1842,6 +1842,7 @@
 
 		.box .content {
 			padding: 3rem;
+			text-align: center;
 		}
 
 		.box > :last-child,

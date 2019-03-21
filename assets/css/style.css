@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Philosopher';
+    src: url('./../fonts/Philosopher-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+.PhiloText {
+    font-family: 'Philosopher', 'Times New Roman';
+}
+
+article header h2 {
+    font-family: 'Philosopher', 'Times New Roman';
+}
+
+#one img,
+#three img {
+    height: 20rem;
+    object-fit: cover;
+}
+
+#CatalogSample {
+    object-position: 0% 20%;
+}
+
+.MenuIcons {
+    display: flex;
+    justify-content: space-around;    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+
