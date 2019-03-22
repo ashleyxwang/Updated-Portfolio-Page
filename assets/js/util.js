@@ -55,7 +55,7 @@
 
 			}
 
-		// Vars.
+		// Vars
 			var	$this = $(this),
 				$body = $('body'),
 				$window = $(window),
