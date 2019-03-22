@@ -19,6 +19,8 @@
 
 	body {
 		line-height: 1;
+		-webkit-text-size-adjust: none;
+		background-color: f2f2f2;
 	}
 
 	ol, ul {
@@ -37,10 +39,6 @@
 	table {
 		border-collapse: collapse;
 		border-spacing: 0;
-	}
-
-	body {
-		-webkit-text-size-adjust: none;
 	}
 
 /* Box Model */
@@ -1808,10 +1806,6 @@
 				border-radius: 0;
 			}
 
-		.box header h2 {
-			margin-bottom: 2rem;
-		}
-
 		.box header p {
 			text-transform: uppercase;
 			font-size: .75rem;
@@ -1873,10 +1867,10 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, red 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, red 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, red 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, red 0.2s ease-in-out;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-radius: 2px;
 		border: 0;
 		cursor: pointer;
@@ -1889,6 +1883,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		color: red;
 	}
 
 		input[type="submit"].icon,
@@ -1977,6 +1972,7 @@
 		button:hover,
 		.button:hover {
 			background-color: white;
+			color: red;
 		}
 
 		input[type="submit"]:active,
@@ -1994,7 +1990,7 @@
 		.button.alt {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
-			color: #555 !important;
+			color: black !important;
 		}
 
 			input[type="submit"].alt:hover,
@@ -2003,6 +1999,8 @@
 			button.alt:hover,
 			.button.alt:hover {
 				background-color: rgba(144, 144, 144, 0.075);
+				color: red;
+				transition: .6s ease;
 			}
 
 			input[type="submit"].alt:active,
@@ -2011,6 +2009,7 @@
 			button.alt:active,
 			.button.alt:active {
 				background-color: rgba(144, 144, 144, 0.2);
+				color: red;
 			}
 
 			input[type="submit"].alt.icon:before,
@@ -2659,7 +2658,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6rem 0 4rem 0 ;
+		padding-top: 4em;
 		position: relative;
 		margin: 0;
 	}
@@ -2748,6 +2747,7 @@
 					.wrapper.style1 button.alt:hover,
 					.wrapper.style1 .button.alt:hover {
 						background-color: rgba(255, 255, 255, 0.075);
+						color: red;
 					}
 
 					.wrapper.style1 input[type="submit"].alt:active,
@@ -2879,6 +2879,7 @@
 
 		.wrapper.style2 {
 			background-color: #f2f2f2;
+			padding-bottom: 3em;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -2925,9 +2926,10 @@
 				.wrapper.style2 input[type="button"].alt,
 				.wrapper.style2 button.alt,
 				.wrapper.style2 .button.alt {
+					margin-top: 1em;
 					background-color: transparent;
 					box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.15);
-					color: #000 !important;
+					color: black !important;
 				}
 
 					.wrapper.style2 input[type="submit"].alt:hover,
@@ -2935,7 +2937,8 @@
 					.wrapper.style2 input[type="button"].alt:hover,
 					.wrapper.style2 button.alt:hover,
 					.wrapper.style2 .button.alt:hover {
-						background-color: rgba(0, 0, 0, 0.075);
+						color: red !important;
+						/* background-color: rgba(0, 0, 0, 0.1); */
 					}
 
 					.wrapper.style2 input[type="submit"].alt:active,
@@ -3082,9 +3085,8 @@
 			}
 
 		.wrapper.style3 {
-			background-color: #000;
+			background-color: white;
 			color: #bfbfbf;
-			background-image: url(../../images/bg.jpg);
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
@@ -3317,7 +3319,6 @@
 				font-size: .75rem;
 				font-weight: 300;
 				margin: 0 0 .5rem 0;
-				padding: 0 0 1rem 0;
 				letter-spacing: .25rem;
 			}
 
@@ -3333,7 +3334,7 @@
 					background-color: rgba(255, 255, 255, 0.5);
 				}
 
-			.wrapper.style3:before {
+			/* .wrapper.style3:before {
 				-moz-transition: opacity 3s ease;
 				-webkit-transition: opacity 3s ease;
 				-ms-transition: opacity 3s ease;
@@ -3352,7 +3353,7 @@
 				top: 0;
 				width: 100%;
 				z-index: 1;
-			}
+			} */
 
 		@media screen and (max-width: 1280px) {
 
@@ -3696,7 +3697,7 @@
 		height: 3.25em;
 		left: 0;
 		line-height: 3.25em;
-		position: fixed;
+		position: relative;
 		text-align: right;
 		top: 0;
 		width: 100%;
@@ -3790,10 +3791,10 @@
 			}
 
 		#header.reveal {
-			-moz-animation: reveal-header 0.5s ease;
-			-webkit-animation: reveal-header 0.5s ease;
-			-ms-animation: reveal-header 0.5s ease;
-			animation: reveal-header 0.5s ease;
+			-moz-animation: reveal-header 1.5s ease;
+			-webkit-animation: reveal-header 1.5s ease;
+			-ms-animation: reveal-header 1.5s ease;
+			animation: reveal-header 1.5s ease;
 		}
 
 		#header.alt {
@@ -4114,6 +4115,7 @@
 				display: inline-block;
 				height: 100%;
 				vertical-align: middle;
+				top: 0;
 			}
 
 			.banner > article:after {
@@ -4133,6 +4135,7 @@
 				display: inline-block;
 				vertical-align: middle;
 				z-index: 1;
+				top: 0;
 			}
 
 				.banner > article .inner > :last-child {

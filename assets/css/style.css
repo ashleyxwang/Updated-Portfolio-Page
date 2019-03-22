@@ -5,6 +5,10 @@
     font-weight: normal;
 }
 
+#designBlurb {
+    padding-bottom: 4em;
+    color: black;
+}
 
 .PhiloText {
     font-family: 'Philosopher', 'Times New Roman';
