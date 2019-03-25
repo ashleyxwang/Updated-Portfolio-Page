@@ -59,11 +59,6 @@ article header h2 {
   width: 25%;
 }
 
-/* Default: Hide modal slides */
-.modal > .slides{
-  display: none;
-}
-
 /* The Modal (background) */
 .modal {
   display: none;
@@ -81,7 +76,6 @@ article header h2 {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
   margin: auto;
   padding: 0;
   height: fit-content;
@@ -90,6 +84,7 @@ article header h2 {
 }
 
 .modal-content > .slides {
+    display: none;
     position: relative;
     height: 30em;
 }
@@ -141,8 +136,16 @@ article header h2 {
   color: white;
 }
   
-/* thumbnail shit */
+span#thumbnailRow {
+  position: absolute;
+  text-align: center;
+  display: inherit;
+}
+
+/* thumbnails */
 img.thumbnail {
+  /* position: relative; */
+  height: 4em;
   opacity: 0.6;
 }
   

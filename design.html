@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
 	<!-- Header -->
 	<header id="header" class="reveal">
 		<div class="logo PhiloText"><a href="index.html"> AXW</a></div>
@@ -52,35 +51,40 @@
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Magazine/Cover.jpg" onclick="openModal();currentSlide(1)" alt="Magazine Cover" />
+							<img src="images/Design/Magazine/Cover.jpg" onclick="openModal(magazine);currentSlide(1)"
+								alt="Magazine Cover" />
 						</a>
 					</div>
 				</div>
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Burns/Act2b.jpg" onclick="openModal();currentSlide(1)" alt="Architectural Set Model" />
+							<img src="images/Design/Burns/Act2b.jpg" onclick="openModal(burns);currentSlide(7)"
+								alt="Architectural Set Model" />
 						</a>
 					</div>
 				</div>
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Paint/render_church.jpg" onclick="openModal();currentSlide(1)" alt="Architectural Set Model" />
+							<img src="images/Design/Paint/render_church.jpg"
+								onclick="openModal(renderings);currentSlide(1)" alt="Architectural Set Model" />
 						</a>
 					</div>
 				</div>
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Clowns/model_front.JPG" onclick="openModal();currentSlide(1)" alt="Clown Room Model" />
+							<img src="images/Design/Clowns/model_front.JPG" onclick="openModal(clowns);currentSlide(1)"
+								alt="Clown Room Model" />
 						</a>
 					</div>
 				</div>
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/PopUp Shop.jpg" onclick="openModal();currentSlide(1)" alt="SketchUp Pop Up Shop" />
+							<img src="images/Design/PopUp Shop.jpg" onclick="openModal(popUp);currentSlide(1)"
+								alt="SketchUp Pop Up Shop" />
 						</a>
 					</div>
 				</div>
@@ -88,35 +92,40 @@
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Catalog/Catalog.jpg" onclick="openModal();currentSlide(1)" alt="Home Catalog Cover" />
+							<img src="images/Design/Catalog/Catalog.jpg" onclick="openModal(catalog);currentSlide(1)"
+								alt="Home Catalog Cover" />
 						</a>
 					</div>
 				</div>
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/window_atlantis.jpg" onclick="openModal();currentSlide(1)" alt="Window Display 'Atlantis'" />
+							<img src="images/Design/window_atlantis.jpg" onclick="openModal(atlantis);currentSlide(1)"
+								alt="Window Display 'Atlantis'" />
 						</a>
 					</div>
 				</div>
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Paint/map_backLight.jpg" onclick="openModal();currentSlide(1)" alt="Translucency Painting" />
+							<img src="images/Design/Paint/map_backLight.jpg"
+								onclick="openModal(paintings);currentSlide(1)" alt="Translucency Painting" />
 						</a>
 					</div>
 				</div>
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/window_grandiose2.jpg" onclick="openModal();currentSlide(1)" alt="Window Display 'grandiose'" />
+							<img src="images/Design/window_grandiose2.jpg"
+								onclick="openModal(grandiose);currentSlide(1)" alt="Window Display 'grandiose'" />
 						</a>
 					</div>
 				</div>
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/model_paine.JPG" onclick="openModal();currentSlide(1)" alt="Set Model and Photos" />
+							<img src="images/Design/model_paine.JPG" onclick="openModal(paine);currentSlide(1)"
+								alt="Set Model and Photos" />
 						</a>
 					</div>
 				</div>
@@ -124,73 +133,97 @@
 		</div>
 	</section>
 
-
-
-	<!-- ---------------literally the modal----------------------------->
-	<!-- gotta add a modal section per pic that has one. copy and paste the img names into spaces as well as thumbnails :P -->
-
-
-	<!-- The Modal/Lightbox -->
-
-	<modal id="myModal" class="modal">
+	<!-- magazine -->
+	<modal class="modal" id="magazine">
 		<div class="modal-content">
 
-			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<span class="close cursor" onclick="closeModal(magazine)">&times;</span>
 
 			<!-- Next/previous controls -->
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-			<img class="slides" src="images/fairytale_Illustration.jpg">
+			<img class="slides" src="images/Design/Magazine/Cover.jpg">
 
-			<img class="slides" src="img2_wide.jpg">
+			<img class="slides" src="images/Design/Magazine/Pg1.jpg">
 
-			<img class="slides" src="img3_wide.jpg">
+			<img class="slides" src="images/Design/Magazine/Pg2.jpg">
 
-			<img class="slides" src="img4_wide.jpg">
+			<img class="slides" src="images/Design/Magazine/Pg3.jpg">
 
+			<img class="slides" src="images/Design/Magazine/Pg4.jpg">
 
-
-
-
-
-
-
-
-
-
-
+			<img class="slides" src="images/Design/Magazine/Pg5.jpg">
 
 			<!-- Caption text -->
 			<div class="caption-container">
 				<p id="caption"></p>
 			</div>
 
-
-
-			<!-- -----------------tiny babies------------------------------------ -->
-
-
 			<!-- Thumbnail image controls -->
-			<div class="column">
-				<img class="thumbnail" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
-			</div>
+			<span id="thumbnailRow">
+				<img class="thumbnail" src="images/Design/Magazine/Cover.jpg" onclick="currentSlide(1)"
+					alt="Cover Page">
 
-			<div class="column">
-				<img class="thumbnail" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
-			</div>
+				<img class="thumbnail" src="images/Design/Magazine/Pg1.jpg" onclick="currentSlide(2)" alt="Page 1">
 
-			<div class="column">
-				<img class="thumbnail" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
-			</div>
+				<img class="thumbnail" src="images/Design/Magazine/Pg2.jpg" onclick="currentSlide(3)" alt="Page 2">
 
-			<div class="column">
-				<img class="thumbnail" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
-			</div>
+				<img class="thumbnail" src="images/Design/Magazine/Pg3.jpg" onclick="currentSlide(4)" alt="Page 3">
+
+				<img class="thumbnail" src="images/Design/Magazine/Pg4.jpg" onclick="currentSlide(5)" alt="Page 4">
+
+				<img class="thumbnail" src="images/Design/Magazine/Pg5.jpg" onclick="currentSlide(6)" alt="Page 5">
+			</span>
 		</div>
 	</modal>
 
+	<!-- burns -->
+	<modal class="modal" id="burns"> -->
+		<div class="modal-content">
 
+			<span class="close cursor" onclick="closeModal(burns)">&times;</span>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<img class="slides" src="images/Design/Burns/Act2b.jpg">
+
+			<img class="slides" src="images/Design/Burns/Act3a.jpg">
+
+			<img class="slides" src="images/Design/Burns/Act3c.jpg">
+
+			<img class="slides" src="images/Design/Burns/FloorPlan_3a.jpg">
+
+			<img class="slides" src="images/Design/Burns/burns_houseboat.JPG">
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<span id="thumbnailRow">
+				<img class="thumbnail" src="images/Design/Burns/Act2b.jpg" onclick="currentSlide(7)" alt="Act 2B">
+
+				<img class="thumbnail" src="images/Design/Burns/Act3a.jpg" onclick="currentSlide(8)" alt="Act 3A">
+
+				<img class="thumbnail" src="images/Design/Burns/Act3c.jpg" onclick="currentSlide(9)" alt="Act 3C">
+
+				<img class="thumbnail" src="images/Design/Burns/FloorPlan_3a.jpg" onclick="currentSlide(10)"
+					alt="Floorplan of Act 3A">
+
+				<img class="thumbnail" src="images/Design/Burns/burns_houseboat.JPG" onclick="currentSlide(11)"
+					alt="Painted Houseboat">
+			</span>
+		</div>
+	</modal>
+	<!-- renderings -->
+	<!-- clowns -->
+	<!-- popUp -->
+	<!-- catalog -->
+	<!-- atlantis -->
+	<!-- paintings -->
+	<!-- grandiose -->
+	<!-- paine -->
 
 
 
