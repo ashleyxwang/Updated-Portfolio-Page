@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-
+<!-- perhaps make one giant modal???????? :) seems easier..-->
 <head>
 	<title>AXW Portfolio</title>
 	<meta charset="utf-8" />
@@ -51,7 +51,7 @@
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Magazine/Cover.jpg" onclick="openModal(magazine);currentSlide(1)"
+							<img src="images/Design/Magazine/Cover.jpg" onclick="openModal(projects);currentSlide(1)"
 								alt="Magazine Cover" />
 						</a>
 					</div>
@@ -59,7 +59,7 @@
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Burns/Act2b.jpg" onclick="openModal(burns);currentSlide(7)"
+							<img src="images/Design/Burns/Act2b.jpg" onclick="openModal(projects);currentSlide(7)"
 								alt="Architectural Set Model" />
 						</a>
 					</div>
@@ -68,14 +68,14 @@
 					<div class="image fit hover-shadow">
 						<a href="#">
 							<img src="images/Design/Paint/render_church.jpg"
-								onclick="openModal(renderings);currentSlide(1)" alt="Architectural Set Model" />
+								onclick="openModal(projects);currentSlide(12)" alt="Architectural Set Model" />
 						</a>
 					</div>
 				</div>
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Clowns/model_front.JPG" onclick="openModal(clowns);currentSlide(1)"
+							<img src="images/Design/Clowns/model_front.JPG" onclick="openModal(projects);currentSlide(1)"
 								alt="Clown Room Model" />
 						</a>
 					</div>
@@ -83,7 +83,7 @@
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/PopUp Shop.jpg" onclick="openModal(popUp);currentSlide(1)"
+							<img src="images/Design/PopUp Shop.jpg" onclick="openModal(projects);currentSlide(1)"
 								alt="SketchUp Pop Up Shop" />
 						</a>
 					</div>
@@ -92,7 +92,7 @@
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Catalog/Catalog.jpg" onclick="openModal(catalog);currentSlide(1)"
+							<img src="images/Design/Catalog/Catalog.jpg" onclick="openModal(projects);currentSlide(1)"
 								alt="Home Catalog Cover" />
 						</a>
 					</div>
@@ -100,7 +100,7 @@
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/window_atlantis.jpg" onclick="openModal(atlantis);currentSlide(1)"
+							<img src="images/Design/window_atlantis.jpg" onclick="openModal(projects);currentSlide(1)"
 								alt="Window Display 'Atlantis'" />
 						</a>
 					</div>
@@ -109,7 +109,7 @@
 					<div class="image fit hover-shadow">
 						<a href="#">
 							<img src="images/Design/Paint/map_backLight.jpg"
-								onclick="openModal(paintings);currentSlide(1)" alt="Translucency Painting" />
+								onclick="openModal(projects);currentSlide(1)" alt="Translucency Painting" />
 						</a>
 					</div>
 				</div>
@@ -117,14 +117,14 @@
 					<div class="image fit hover-shadow">
 						<a href="#">
 							<img src="images/Design/window_grandiose2.jpg"
-								onclick="openModal(grandiose);currentSlide(1)" alt="Window Display 'grandiose'" />
+								onclick="openModal(projects);currentSlide(1)" alt="Window Display 'grandiose'" />
 						</a>
 					</div>
 				</div>
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/model_paine.JPG" onclick="openModal(paine);currentSlide(1)"
+							<img src="images/Design/model_paine.JPG" onclick="openModal(projects);currentSlide(1)"
 								alt="Set Model and Photos" />
 						</a>
 					</div>
@@ -134,31 +134,35 @@
 	</section>
 
 	<!-- magazine -->
-	<modal class="modal" id="magazine">
+	<modal class="modal" id="projects">
 		<div class="modal-content">
 
-			<span class="close cursor" onclick="closeModal(magazine)">&times;</span>
+			<span class="close cursor" onclick="closeModal(projects)">&times;</span>
 
 			<!-- Next/previous controls -->
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+			<!-- Magazine on (1)-->
 			<img class="slides" src="images/Design/Magazine/Cover.jpg">
-
 			<img class="slides" src="images/Design/Magazine/Pg1.jpg">
-
 			<img class="slides" src="images/Design/Magazine/Pg2.jpg">
-
 			<img class="slides" src="images/Design/Magazine/Pg3.jpg">
-
 			<img class="slides" src="images/Design/Magazine/Pg4.jpg">
-
 			<img class="slides" src="images/Design/Magazine/Pg5.jpg">
 
+			<!-- Burns on (7)-->
+			<img class="slides" src="images/Design/Burns/Act2b.jpg">
+			<img class="slides" src="images/Design/Burns/Act3a.jpg">
+			<img class="slides" src="images/Design/Burns/Act3c.jpg">
+			<img class="slides" src="images/Design/Burns/FloorPlan_3a.jpg">
+			<img class="slides" src="images/Design/Burns/burns_houseboat.JPG">
+
+			<!-- (12) -->
 			<!-- Caption text -->
-			<div class="caption-container">
+			<!-- <div class="caption-container">
 				<p id="caption"></p>
-			</div>
+			</div> -->
 
 			<!-- Thumbnail image controls -->
 			<span id="thumbnailRow">
@@ -179,7 +183,7 @@
 	</modal>
 
 	<!-- burns -->
-	<modal class="modal" id="burns"> -->
+	<!-- <modal class="modal" id="burns">
 		<div class="modal-content">
 
 			<span class="close cursor" onclick="closeModal(burns)">&times;</span>
@@ -199,7 +203,7 @@
 
 			<div class="caption-container">
 				<p id="caption"></p>
-			</div>
+			</div> -->
 
 			<span id="thumbnailRow">
 				<img class="thumbnail" src="images/Design/Burns/Act2b.jpg" onclick="currentSlide(7)" alt="Act 2B">
@@ -214,8 +218,8 @@
 				<img class="thumbnail" src="images/Design/Burns/burns_houseboat.JPG" onclick="currentSlide(11)"
 					alt="Painted Houseboat">
 			</span>
-		</div>
-	</modal>
+		<!-- </div>
+	</modal> -->
 	<!-- renderings -->
 	<!-- clowns -->
 	<!-- popUp -->

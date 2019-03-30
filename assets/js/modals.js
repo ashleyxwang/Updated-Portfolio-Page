@@ -1,11 +1,11 @@
 // Open Modal Functions
-function openModal(modalName) {
-	$(modalName).css('display', 'block');
+function openModal(projects) {
+	$(projects).css('display', 'block');
 }
 
 // Close the Modal X
-function closeModal(modalName) {
-	$(modalName).css('display', 'none');
+function closeModal(projects) {
+	$(projects).css('display', 'none');
 }
 
 var slideIndex = 1;
@@ -24,10 +24,11 @@ function currentSlide(n) {
 
 function showSlides(n) {
 	var slides = document.getElementsByClassName("slides");
-	var dots = document.getElementsByClassName("thumbnail");
+	var dots = $('.thumbnail')
 	var captionText = document.getElementById("caption");
 	if (n > slides.length) { slideIndex = 1 }
 	if (n < 1) { slideIndex = slides.length }
+
 	for (i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none";
 	}
@@ -38,4 +39,3 @@ function showSlides(n) {
 	dots[slideIndex - 1].className += " active";
 	captionText.innerHTML = dots[slideIndex - 1].alt;
 }
-
