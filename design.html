@@ -51,7 +51,7 @@
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Magazine/Cover.jpg" onclick="openModal(magazine);currentSlide(1)"
+							<img src="images/Design/Magazine/Cover.jpg" onclick="openModal('#magazine');currentSlide(1)"
 								alt="Magazine Cover" />
 						</a>
 					</div>
@@ -59,7 +59,7 @@
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Burns/Act2b.jpg" onclick="openModal(projects);currentSlide(7)"
+							<img src="images/Design/Burns/Act2b.jpg" onclick="openModal('#burns');currentSlide(7)"
 								alt="Architectural Set Model" />
 						</a>
 					</div>
@@ -134,10 +134,10 @@
 	</section>
 
 	<!-- magazine -->
-	<modal class="modal" id="projects">
+	<modal class="modal" id="magazine">
 		<div class="modal-content">
 
-			<span class="close cursor" onclick="closeModal(projects)">&times;</span>
+			<span class="close cursor" onclick="closeModal(magazine)">&times;</span>
 
 			<!-- Next/previous controls -->
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -150,13 +150,6 @@
 			<img class="slides" src="images/Design/Magazine/Pg3.jpg">
 			<img class="slides" src="images/Design/Magazine/Pg4.jpg">
 			<img class="slides" src="images/Design/Magazine/Pg5.jpg">
-
-			<!-- Burns on (7)-->
-			<img class="slides" src="images/Design/Burns/Act2b.jpg">
-			<img class="slides" src="images/Design/Burns/Act3a.jpg">
-			<img class="slides" src="images/Design/Burns/Act3c.jpg">
-			<img class="slides" src="images/Design/Burns/FloorPlan_3a.jpg">
-			<img class="slides" src="images/Design/Burns/burns_houseboat.JPG">
 
 			<!-- (12) -->
 			<!-- Caption text -->
@@ -183,7 +176,7 @@
 	</modal>
 
 	<!-- burns -->
-	<!-- <modal class="modal" id="burns">
+	<modal class="modal" id="burns">
 		<div class="modal-content">
 
 			<span class="close cursor" onclick="closeModal(burns)">&times;</span>
@@ -203,7 +196,7 @@
 
 			<div class="caption-container">
 				<p id="caption"></p>
-			</div> -->
+			</div>
 
 			<span id="thumbnailRow">
 				<img class="thumbnail" src="images/Design/Burns/Act2b.jpg" onclick="currentSlide(7)" alt="Act 2B">
@@ -218,8 +211,9 @@
 				<img class="thumbnail" src="images/Design/Burns/burns_houseboat.JPG" onclick="currentSlide(11)"
 					alt="Painted Houseboat">
 			</span>
-		<!-- </div>
-	</modal> -->
+		</div>
+	</modal>
+
 	<!-- renderings -->
 	<!-- clowns -->
 	<!-- popUp -->
@@ -228,8 +222,6 @@
 	<!-- paintings -->
 	<!-- grandiose -->
 	<!-- paine -->
-
-
 
 
 	<!-- Footer -->
