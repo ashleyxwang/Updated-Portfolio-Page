@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <!-- perhaps make one giant modal???????? :) seems easier..-->
+
 <head>
 	<title>AXW Portfolio</title>
 	<meta charset="utf-8" />
@@ -48,6 +49,7 @@
 				<h2>DESIGN PORTFOLIO.. IN CONSTRUCTION</h2>
 			</header>
 			<div class="gallery">
+				<!-- magazine -->
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
@@ -56,75 +58,83 @@
 						</a>
 					</div>
 				</div>
+				<!-- SheKills -->
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Burns/Act2b.jpg" onclick="openModal('#burns');currentSlide(7)"
-								alt="Architectural Set Model" />
+							<img src="images/Design/SheKills/DragonFight.jpg" onclick="openModal('#sheKills');currentSlide(1)"
+								alt="She Kills Monsters Scene Design & Dragon" />
 						</a>
 					</div>
 				</div>
+				<!-- angel -->
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Paint/render_church.jpg"
-								onclick="openModal(projects);currentSlide(12)" alt="Architectural Set Model" />
+							<img src="images/Design/Angel/angel_frontFull.jpg"
+								onclick="openModal('#angel');currentSlide(1)" alt="Angel Full Photo" />
 						</a>
 					</div>
 				</div>
+				<!-- clowns -->
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Clowns/model_front.JPG" onclick="openModal(projects);currentSlide(1)"
+							<img src="images/Design/Clowns/model_front.JPG" onclick="openModal('#clowns');currentSlide(1)"
 								alt="Clown Room Model" />
 						</a>
 					</div>
 				</div>
+				<!-- digitalRender -->
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/PopUp Shop.jpg" onclick="openModal(projects);currentSlide(1)"
+							<img src="images/Design/digitalRender/PopUp Shop.jpg" onclick="openModal('#digitalRender');currentSlide(1)"
 								alt="SketchUp Pop Up Shop" />
 						</a>
 					</div>
 				</div>
-
+				<!-- catalog -->
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Catalog/Catalog.jpg" onclick="openModal(projects);currentSlide(1)"
+							<img src="images/Design/Catalog/CatalogCoverPg.jpg" onclick="openModal('#catalog');currentSlide(1)"
 								alt="Home Catalog Cover" />
 						</a>
 					</div>
 				</div>
+				<!-- handRender -->
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/window_atlantis.jpg" onclick="openModal(projects);currentSlide(1)"
+							<img src="images/Design/handRender/render_church.jpg" onclick="openModal('#handRender');currentSlide(1)"
 								alt="Window Display 'Atlantis'" />
 						</a>
 					</div>
 				</div>
+				<!-- Paine -->
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/Paint/map_backLight.jpg"
-								onclick="openModal(projects);currentSlide(1)" alt="Translucency Painting" />
+							<img src="images/Design/Paine/model_paine.JPG"
+								onclick="openModal('#paine');currentSlide(1)" alt="Translucency Painting" />
 						</a>
 					</div>
 				</div>
+				<!-- burns -->
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/window_grandiose2.jpg"
-								onclick="openModal(projects);currentSlide(1)" alt="Window Display 'grandiose'" />
+							<img src="images/Design/Burns/Act2b.jpg" onclick="openModal('#burns');currentSlide(1)"
+								alt="Architectural Set Model" />
 						</a>
 					</div>
 				</div>
+				<!-- Windows -->
 				<div>
 					<div class="image fit hover-shadow">
 						<a href="#">
-							<img src="images/Design/model_paine.JPG" onclick="openModal(projects);currentSlide(1)"
+							<img src="images/Design/Windows/window_atlantis.jpg" onclick="openModal('#windows');currentSlide(1)"
 								alt="Set Model and Photos" />
 						</a>
 					</div>
@@ -137,13 +147,11 @@
 	<modal class="modal" id="magazine">
 		<div class="modal-content">
 
-			<span class="close cursor" onclick="closeModal(magazine)">&times;</span>
+			<span class="close cursor" onclick="closeModal('#magazine')">&times;</span>
 
-			<!-- Next/previous controls -->
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-			<!-- Magazine on (1)-->
 			<img class="slides" src="images/Design/Magazine/Cover.jpg">
 			<img class="slides" src="images/Design/Magazine/Pg1.jpg">
 			<img class="slides" src="images/Design/Magazine/Pg2.jpg">
@@ -151,26 +159,261 @@
 			<img class="slides" src="images/Design/Magazine/Pg4.jpg">
 			<img class="slides" src="images/Design/Magazine/Pg5.jpg">
 
-			<!-- (12) -->
-			<!-- Caption text -->
-			<!-- <div class="caption-container">
+			<div class="caption-container">
 				<p id="caption"></p>
-			</div> -->
+			</div>
 
-			<!-- Thumbnail image controls -->
 			<span id="thumbnailRow">
 				<img class="thumbnail" src="images/Design/Magazine/Cover.jpg" onclick="currentSlide(1)"
-					alt="Cover Page">
-
+				alt="Cover Page">
 				<img class="thumbnail" src="images/Design/Magazine/Pg1.jpg" onclick="currentSlide(2)" alt="Page 1">
-
 				<img class="thumbnail" src="images/Design/Magazine/Pg2.jpg" onclick="currentSlide(3)" alt="Page 2">
-
 				<img class="thumbnail" src="images/Design/Magazine/Pg3.jpg" onclick="currentSlide(4)" alt="Page 3">
-
 				<img class="thumbnail" src="images/Design/Magazine/Pg4.jpg" onclick="currentSlide(5)" alt="Page 4">
-
 				<img class="thumbnail" src="images/Design/Magazine/Pg5.jpg" onclick="currentSlide(6)" alt="Page 5">
+			</span>
+		</div>
+	</modal>
+
+	<!-- SheKills -->
+	<modal class="modal" id="sheKills">
+		<div class="modal-content">
+
+			<span class="close cursor" onclick="closeModal('#sheKills')">&times;</span>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<img class="slides" src="images/Design/SheKills/DragonFight.jpg">
+			<img class="slides" src="images/Design/SheKills/cube.jpg">
+			<img class="slides" src="images/Design/SheKills/shadowScreen.jpg">
+			<img class="slides" src="images/Design/SheKills/layers1.jpg">
+			<img class="slides" src="images/Design/SheKills/layers2.jpg">
+			<img class="slides" src="images/Design/SheKills/openScreens.jpg">
+			<img class="slides" src="images/Design/SheKills/whiteModel.jpg">
+			<img class="slides" src="images/Design/SheKills/paintElevations.jpg">
+			<img class="slides" src="images/Design/SheKills/dragonHead.jpg">
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<span id="thumbnailRow">
+				<img class="thumbnail" src="images/Design/SheKills/DragonFight.jpg" onclick="currentSlide(1)" alt="Act 2B">
+				<img class="thumbnail" src="images/Design/SheKills/cube.jpg" onclick="currentSlide(2)" alt="Act 3A">
+				<img class="thumbnail" src="images/Design/SheKills/shadowScreen.jpg" onclick="currentSlide(3)" alt="Act 3C">
+				<img class="thumbnail" src="images/Design/SheKills/layers1.jpg" onclick="currentSlide(4)" alt="Floorplan of Act 3A">
+				<img class="thumbnail" src="images/Design/SheKills/layers2.jpg" onclick="currentSlide(5)" alt="Painted Houseboat">
+				<img class="thumbnail" src="images/Design/SheKills/openScreens.jpg" onclick="currentSlide(6)" alt="Painted Houseboat">
+				<img class="thumbnail" src="images/Design/SheKills/whiteModel.jpg" onclick="currentSlide(7)" alt="Painted Houseboat">
+				<img class="thumbnail" src="images/Design/SheKills/paintElevations.jpg" onclick="currentSlide(8)" alt="Painted Houseboat">
+				<img class="thumbnail" src="images/Design/SheKills/dragonHead.jpg" onclick="currentSlide(9)" alt="Painted Houseboat">			
+			</span>
+		</div>
+	</modal>
+
+	<!-- angel -->
+	<modal class="modal" id="angel">
+		<div class="modal-content">
+
+			<span class="close cursor" onclick="closeModal('#angel')">&times;</span>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<img class="slides" src="images/Design/Angel/angel_frontFull.jpg">
+			<img class="slides" src="images/Design/Angel/angel_frontCloseUp.jpg">
+			<img class="slides" src="images/Design/Angel/angel_side.jpg">
+			<img class="slides" src="images/Design/Angel/process (1).jpg">
+			<img class="slides" src="images/Design/Angel/process (2).jpg">
+			<img class="slides" src="images/Design/Angel/process (3).jpg">
+			<img class="slides" src="images/Design/Angel/process (4).jpg">
+			<img class="slides" src="images/Design/Angel/process (5).jpg">
+
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<span id="thumbnailRow">
+				<img class="thumbnail" src="images/Design/Angel/angel_frontFull.jpg" onclick="currentSlide(1)"
+					alt="Act 2B">
+				<img class="thumbnail" src="images/Design/Angel/angel_frontCloseUp.jpg" onclick="currentSlide(2)"
+					alt="Act 3A">
+				<img class="thumbnail" src="images/Design/Angel/angel_side.jpg" onclick="currentSlide(3)" alt="Act 3C">
+				<img class="thumbnail" src="images/Design/Angel/process (1).jpg" onclick="currentSlide(4)"
+					alt="Floorplan of Act 3A">
+				<img class="thumbnail" src="images/Design/Angel/process (2).jpg" onclick="currentSlide(5)"
+					alt="Painted Houseboat">
+				<img class="thumbnail" src="images/Design/Angel/process (3).jpg" onclick="currentSlide(6)" alt="">
+				<img class="thumbnail" src="images/Design/Angel/process (4).jpg" onclick="currentSlide(7)" alt="">
+				<img class="thumbnail" src="images/Design/Angel/process (5).jpg" onclick="currentSlide(8)" alt="">
+
+			</span>
+		</div>
+	</modal>
+
+	<!-- clowns -->
+	<modal class="modal" id="clowns">
+		<div class="modal-content">
+
+			<span class="close cursor" onclick="closeModal('#clowns')">&times;</span>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<img class="slides" src="images/Design/Clowns/model_front.JPG">
+
+			<img class="slides" src="images/Design/Clowns/model.JPG">
+
+			<img class="slides" src="images/Design/Clowns/illustration_perspective.JPG">
+
+			<img class="slides" src="images/Design/Clowns/illustration_elevation.jpg">
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<span id="thumbnailRow">
+				<img class="thumbnail" src="images/Design/Clowns/model_front.JPG" onclick="currentSlide(1)" alt="Act 2B">
+
+				<img class="thumbnail" src="images/Design/Clowns/model.JPG" onclick="currentSlide(2)" alt="Act 3A">
+
+				<img class="thumbnail" src="images/Design/Clowns/illustration_perspective.JPG" onclick="currentSlide(3)" alt="Act 3C">
+
+				<img class="thumbnail" src="images/Design/Clowns/illustration_elevation.jpg" onclick="currentSlide(4)"
+					alt="Floorplan of Act 3A">
+
+			</span>
+		</div>
+	</modal>
+
+	<!-- digitalRender-->
+	<modal class="modal" id="digitalRender">
+		<div class="modal-content">
+
+			<span class="close cursor" onclick="closeModal('#digitalRender')">&times;</span>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<img class="slides" src="images/Design/digitalRender/PopUp Shop.jpg">
+			<img class="slides" src="images/Design/digitalRender/">
+			<img class="slides" src="images/Design/digitalRender/">
+			<img class="slides" src="images/Design/digitalRender/">
+			<img class="slides" src="images/Design/digitalRender/AWlogo.jpg">
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<span id="thumbnailRow">
+				<img class="thumbnail" src="images/Design/digitalRender/PopUp Shop.jpg" onclick="currentSlide(1)" alt="Act 2B">
+				<img class="thumbnail" src="images/Design/digitalRender/" onclick="currentSlide(2)" alt="Act 3A">
+				<img class="thumbnail" src="images/Design/digitalRender/" onclick="currentSlide(3)" alt="Act 3C">
+				<img class="thumbnail" src="images/Design/digitalRender/" onclick="currentSlide(4)"
+					alt="Floorplan of Act 3A">
+				<img class="thumbnail" src="images/Design/digitalRender/AWlogo.jpg" onclick="currentSlide(5)"	alt="Painted Houseboat">
+			</span>
+		</div>
+	</modal>
+
+	<!-- catalog -->
+	<modal class="modal" id="catalog">
+		<div class="modal-content">
+
+			<span class="close cursor" onclick="closeModal('catalog')">&times;</span>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<img class="slides" src="images/Design/Catalog/Catalog.jpg">
+			<img class="slides" src="images/Design/Catalog/Catalog2.jpg">
+			<img class="slides" src="images/Design/Catalog/Catalog3.jpg">
+			<img class="slides" src="images/Design/Catalog/Catalog4_5.jpg">
+			<img class="slides" src="images/Design/Catalog/Catalog6_7.jpg">
+			<img class="slides" src="images/Design/Catalog/Catalog8.jpg">
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<span id="thumbnailRow">
+				<img class="thumbnail" src="images/Design/Catalog/Catalog.jpg" onclick="currentSlide(1)" alt="Act 2B">
+				<img class="thumbnail" src="images/Design/Catalog/Catalog2.jpg" onclick="currentSlide(2)" alt="Act 3A">
+				<img class="thumbnail" src="images/Design/Catalog/Catalog3.jpg" onclick="currentSlide(3)" alt="Act 3C">
+				<img class="thumbnail" src="images/Design/Catalog/Catalog4_5.jpg" onclick="currentSlide(4)"
+					alt="Floorplan of Act 3A">
+				<img class="thumbnail" src="images/Design/Catalog/Catalog6_7.jpg" onclick="currentSlide(5)"
+					alt="Painted Houseboat">
+				<img class="thumbnail" src="images/Design/Catalog/Catalog8.jpg" onclick="currentSlide(6)"
+					alt="Painted Houseboat">
+			</span>
+		</div>
+	</modal>
+
+	<!-- handRender -->
+	<modal class="modal" id="handRender">
+		<div class="modal-content">
+
+			<span class="close cursor" onclick="closeModal('#handRender')">&times;</span>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<img class="slides" src="images/Design/handRender/render_church.jpg">
+			<img class="slides" src="images/Design/handRender/fairytale_Illustration.jpg">
+			<img class="slides" src="images/Design/handRender/pickle_rick_fin.jpg">
+			<img class="slides" src="images/Design/handRender/map_backLight.jpg">
+			<img class="slides" src="images/Design/handRender/map_frontLight.jpg">
+			<img class="slides" src="images/Design/handRender/handDrafting.jpg">
+			<img class="slides" src="images/Design/handRender/skulls.jpg">
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<span id="thumbnailRow">
+				<img class="thumbnail" src="images/Design/handRender/render_church.jpg" onclick="currentSlide(1)" alt="Act 2B">
+				<img class="thumbnail" src="images/Design/handRender/fairytale_Illustration.jpg" onclick="currentSlide(2)" alt="Act 3A">
+				<img class="thumbnail" src="images/Design/handRender/pickle_rick_fin.jpg" onclick="currentSlide(3)" alt="Act 3C">
+				<img class="thumbnail" src="images/Design/handRender/map_backLight.jpg" onclick="currentSlide(4)"
+					alt="Floorplan of Act 3A">
+				<img class="thumbnail" src="images/Design/handRender/map_frontLight.jpg" onclick="currentSlide(5)"
+					alt="Painted Houseboat">
+				<img class="thumbnail" src="images/Design/handRender/handDrafting.jpg" onclick="currentSlide(6)"
+					alt="Floorplan of Act 3A">
+				<img class="thumbnail" src="images/Design/handRender/skulls.jpg" onclick="currentSlide(7)"
+					alt="Floorplan of Act 3A">
+			</span>
+		</div>
+	</modal>
+
+	<!-- Paine-->
+	<modal class="modal" id="paine">
+		<div class="modal-content">
+
+			<span class="close cursor" onclick="closeModal('#paine')">&times;</span>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<img class="slides" src="images/Design/Paine/model_paine.JPG">
+			<img class="slides" src="images/Design/Paine/Paine1.JPG">
+			<img class="slides" src="images/Design/Paine/Paine2.JPG">
+			<img class="slides" src="images/Design/Paine/girlPaine_paint.JPG">
+			<img class="slides" src="images/Design/Paine/boyPaine_paint.JPG">
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<span id="thumbnailRow">
+				<img class="thumbnail" src="images/Design/Paine/model_paine.JPG" onclick="currentSlide(1)" alt="Act 2B">
+				<img class="thumbnail" src="images/Design/Paine/Paine1.JPG" onclick="currentSlide(2)" alt="Act 3A">
+				<img class="thumbnail" src="images/Design/Paine/Paine2.JPG" onclick="currentSlide(3)" alt="Act 3C">
+				<img class="thumbnail" src="images/Design/Paine/girlPaine_paint.JPG" onclick="currentSlide(4)" alt="Floorplan of Act 3A">
+				<img class="thumbnail" src="images/Design/Paine/boyPaine_paint.JPG" onclick="currentSlide(5)" alt="Painted Houseboat">
 			</span>
 		</div>
 	</modal>
@@ -179,50 +422,64 @@
 	<modal class="modal" id="burns">
 		<div class="modal-content">
 
-			<span class="close cursor" onclick="closeModal(burns)">&times;</span>
+			<span class="close cursor" onclick="closeModal('#burns')">&times;</span>
 
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 			<img class="slides" src="images/Design/Burns/Act2b.jpg">
-
 			<img class="slides" src="images/Design/Burns/Act3a.jpg">
-
 			<img class="slides" src="images/Design/Burns/Act3c.jpg">
-
+			<img class="slides" src="images/Design/Burns/Act3bReal.jpg">
 			<img class="slides" src="images/Design/Burns/FloorPlan_3a.jpg">
-
 			<img class="slides" src="images/Design/Burns/burns_houseboat.JPG">
+			<img class="slides" src="images/Design/Burns/scrim.JPG">
+
 
 			<div class="caption-container">
 				<p id="caption"></p>
 			</div>
 
 			<span id="thumbnailRow">
-				<img class="thumbnail" src="images/Design/Burns/Act2b.jpg" onclick="currentSlide(7)" alt="Act 2B">
-
-				<img class="thumbnail" src="images/Design/Burns/Act3a.jpg" onclick="currentSlide(8)" alt="Act 3A">
-
-				<img class="thumbnail" src="images/Design/Burns/Act3c.jpg" onclick="currentSlide(9)" alt="Act 3C">
-
-				<img class="thumbnail" src="images/Design/Burns/FloorPlan_3a.jpg" onclick="currentSlide(10)"
-					alt="Floorplan of Act 3A">
-
-				<img class="thumbnail" src="images/Design/Burns/burns_houseboat.JPG" onclick="currentSlide(11)"
-					alt="Painted Houseboat">
+				<img class="thumbnail" src="images/Design/Burns/Act2b.jpg" onclick="currentSlide(1)" alt="Act 2B">
+				<img class="thumbnail" src="images/Design/Burns/Act3a.jpg" onclick="currentSlide(2)" alt="Act 3A">
+				<img class="thumbnail" src="images/Design/Burns/Act3c.jpg" onclick="currentSlide(3)" alt="Act 3C">
+				<img class="thumbnail" src="images/Design/Burns/Act3bReal.jpg" onclick="currentSlide(4)" alt="Act 3C">
+				<img class="thumbnail" src="images/Design/Burns/FloorPlan_3a.jpg" onclick="currentSlide(5)" alt="Floorplan of Act 3A">
+				<img class="thumbnail" src="images/Design/Burns/burns_houseboat.JPG" onclick="currentSlide(6)" alt="Painted Houseboat">
+				<img class="thumbnail" src="images/Design/Burns/scrim.JPG" onclick="currentSlide(7)" alt="Act 3C">
 			</span>
 		</div>
 	</modal>
 
-	<!-- renderings -->
-	<!-- clowns -->
-	<!-- popUp -->
-	<!-- catalog -->
-	<!-- atlantis -->
-	<!-- paintings -->
-	<!-- grandiose -->
-	<!-- paine -->
+	<!-- Windows -->
+	<modal class="modal" id="windows">
+		<div class="modal-content">
 
+			<span class="close cursor" onclick="closeModal('#windows')">&times;</span>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<img class="slides" src="images/Design/Windows/window_atlantis.jpg">
+
+			<img class="slides" src="images/Design/Windows/window_grandiose1.jpg">
+
+			<img class="slides" src="images/Design/Windows/window_grandiose2.jpg">
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<span id="thumbnailRow">
+				<img class="thumbnail" src="images/Design/Windows/window_atlantis.jpg" onclick="currentSlide(1)" alt="Act 2B">
+
+				<img class="thumbnail" src="images/Design/Windows/window_grandiose1.jpg" onclick="currentSlide(2)" alt="Act 3A">
+
+				<img class="thumbnail" src="images/Design/Windows/window_grandiose2.jpg" onclick="currentSlide(3)" alt="Act 3C">
+			</span>
+		</div>
+	</modal>
 
 	<!-- Footer -->
 	<footer id="footer">
