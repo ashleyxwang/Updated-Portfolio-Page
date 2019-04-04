@@ -6,14 +6,21 @@ function openModal(modalId) {
 	slideIndex = 1;
 	modalName = modalId;
 	showSlides(slideIndex, modalId);
-	console.log(modalId);
 	$(modalId).css('display', 'block');
+	if ($(document).on('mousedown', '*:not(.modal)')){
+		function closeModal(modalName);
+	}
 }
 
 // Close the Modal X
 function closeModal(modalName) {
 	$(modalName).css('display', 'none');
 }
+
+$(document).on('mousedown', '*:not(.modal)', function closeModal() {
+	console.log("close");
+	$('.modal').css('display', 'none');
+});
 
 // Next/previous controls
 function plusSlides(n) {
