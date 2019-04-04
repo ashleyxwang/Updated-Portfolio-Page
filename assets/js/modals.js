@@ -7,20 +7,22 @@ function openModal(modalId) {
 	modalName = modalId;
 	showSlides(slideIndex, modalId);
 	$(modalId).css('display', 'block');
-	if ($(document).on('mousedown', '*:not(.modal)')){
-		function closeModal(modalName);
-	}
+	event.preventDefault();
+
+	// if ($(document).on('mousedown', '*:not(.modal)')){
+	// 	function closeModal(modalName);
+	// }
 }
 
 // Close the Modal X
 function closeModal(modalName) {
 	$(modalName).css('display', 'none');
-}
+};
 
-$(document).on('mousedown', '*:not(.modal)', function closeModal() {
-	console.log("close");
-	$('.modal').css('display', 'none');
-});
+// $(document).on('mousedown', '*:not(.modal)', function closeModal() {
+// 	console.log("close");
+// 	$('.modal').css('display', 'none');
+// });
 
 // Next/previous controls
 function plusSlides(n) {
@@ -35,7 +37,7 @@ function currentSlide(n) {
 function showSlides(n, modalId) {
 	let slides = document.querySelectorAll(modalId + " .slides");
 	let dots = $(modalId + ' .thumbnail')
-	let captionText = document.getElementById("caption");
+	let captionText = '#caption';
 	if (n > slides.length) { slideIndex = 1 }
 	if (n < 1) { slideIndex = slides.length }
 
