@@ -201,12 +201,12 @@ img.hover-shadow {
   background-color: #008CBA;
 }
 
-.container:hover .overlay {
+.hoverImg:hover .overlay {
   opacity: 1;
+  background-color: rgba(201,201,200,.9)
 }
 
 .text {
-  color: white;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -215,4 +215,41 @@ img.hover-shadow {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
 }
+
+.fa-github, .fa-chevron-circle-right{
+  color: black;
+}
+
+.fa-github:hover, .fa-chevron-circle-right:hover{
+  color: red;
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  font-size: 12px;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  position: absolute;
+  z-index: 1;
+  top: 1.5em;
+  left: 105%; 
+}
+
