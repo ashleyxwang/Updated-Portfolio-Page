@@ -203,11 +203,10 @@ img.hover-shadow {
 
 .hoverImg:hover .overlay {
   opacity: 1;
-  background-color: rgba(201,201,200,.9)
+  background-color: rgba(201,201,200,.95)
 }
 
 .text {
-  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -215,11 +214,16 @@ img.hover-shadow {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 100%;
+  width: 90%;
+}
+
+.text h1 {
+  font-size: 20px;
 }
 
 .fa-github, .fa-chevron-circle-right{
   color: black;
+  margin: .75rem .5rem 0 .5rem;
 }
 
 .fa-github:hover, .fa-chevron-circle-right:hover{
@@ -249,7 +253,7 @@ img.hover-shadow {
  
   position: absolute;
   z-index: 1;
-  top: 1.5em;
+  top: .75em;
   left: 105%; 
 }
 
