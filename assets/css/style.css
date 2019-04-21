@@ -132,15 +132,17 @@ article header h2 {
 /* Caption text */
 .caption-container {
   text-align: center;
-  /* background-color: black; */
-  padding: 2px 16px;
+  background-color: black;
   color: white;
+  width: min-content;
+  min-width: fit-content;
 }
   
 span#thumbnailRow {
   position: absolute;
   text-align: center;
   display: inherit;
+
 }
 
 /* thumbnails */
@@ -223,7 +225,7 @@ img.hover-shadow {
 
 .fa-github, .fa-chevron-circle-right{
   color: black;
-  margin: .75rem .5rem 0 .5rem;
+  margin: 0 .5rem;
 }
 
 .fa-github:hover, .fa-chevron-circle-right:hover{
@@ -257,3 +259,10 @@ img.hover-shadow {
   left: 105%; 
 }
 
+/* resume! */
+img#resume {
+  width: 50%;
+  display: block;
+  margin: 3rem auto 3rem auto;
+  
+}

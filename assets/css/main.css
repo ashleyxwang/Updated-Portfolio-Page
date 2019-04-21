@@ -4294,6 +4294,10 @@ img {
 			text-align: center;
 		}
 
+		#footer .fa-behance::before {
+			bottom: 0;
+		}
+
 		@media screen and (max-width: 736px) {
 
 			#footer {
