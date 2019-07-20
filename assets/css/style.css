@@ -168,6 +168,10 @@ img.hover-shadow {
         0 6px 20px 0 rgba(0, 0, 0, 0.09);
 }
 
+#redSpecial {
+  color: red;
+}
+
 @media screen and (max-width: 736px) {
 
     .modal-content > .slides {
